@@ -1,4 +1,4 @@
-import { IBenefit } from './types'
+import { IBenefit } from '../model/types'
 
 export const benefitsConfig: IBenefit[] = [
 	{
