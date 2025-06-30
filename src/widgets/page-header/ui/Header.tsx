@@ -17,7 +17,7 @@ const Header = () => {
 				id='page-header'
 				className='max-w-7xl w-full mx-auto px-5 py-xs rounded-sm lg:px-[3.125rem] bg-light'
 			>
-				<div className='flex justify-between'>
+				<div className='flex justify-between items-center'>
 					<Link href='/' className='relative w-[160px] h-[37px]'>
 						<Logo />
 					</Link>
@@ -26,6 +26,10 @@ const Header = () => {
 						closeNav={() => setNavIsOpen(false)}
 						links={navConfig}
 					/>
+					<div className='hidden xs:flex flex-col items-end font-inter font-semibold text-sm xs:ml-auto xs:mr-10 lg:ml-0 lg:mr-0'>
+						<Link href={'tel:+79182031229'}>+7 (918) 203-12-29</Link>
+						<Link href={'tel:+79676447263'}>+7 (967) 644-72-63</Link>
+					</div>
 					<BurgerButton
 						alt='Открыть меню'
 						isOpen={navIsOpen}

@@ -14,7 +14,7 @@ const Nav = ({ links, isOpen, closeNav }: NavProps) => {
 				isOpen ? 'translate-x-0' : 'translate-x-full'
 			}`}
 		>
-			<ul className='w-full font-inter text-sm text-center text-nowrap lg:flex lg:gap-xs lg:w-fit'>
+			<ul className='w-full font-inter text-center text-nowrap lg:flex lg:gap-xs lg:w-fit'>
 				{links.map(link => (
 					<li
 						key={link.name}
@@ -23,7 +23,7 @@ const Nav = ({ links, isOpen, closeNav }: NavProps) => {
 						<Link
 							onClick={closeNav}
 							href={link.path}
-							className='inline-block w-full text-lg text-light md:text-md lg:text-dark'
+							className='inline-block w-full text-lg text-light md:text-md lg:text-dark lg:text-sm'
 						>
 							{link.name}
 						</Link>
