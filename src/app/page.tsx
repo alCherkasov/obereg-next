@@ -8,7 +8,7 @@ import Products from '@/widgets/products/ui/Products'
 
 export default function Home() {
 	return (
-		<main className='max-w-7xl w-full mx-auto px-5 lg:px-[3.125rem] flex flex-col gap-lg pt-xxl pb-lg sm:gap-xl'>
+		<main className='max-w-7xl w-full mx-auto px-5 lg:px-[3.125rem] flex flex-col gap-lg pt-[100px] md:pt-xxl pb-lg sm:gap-xl'>
 			<Hero />
 			<Products />
 			<Benefits />
