@@ -1,9 +1,9 @@
 @import 'tailwindcss';
 
-* {
+html {
+	scroll-padding-block: 100px;
 	scroll-behavior: smooth;
 	-webkit-tap-highlight-color: transparent;
-	scroll-padding-block: 201px;
 }
 
 :root {
