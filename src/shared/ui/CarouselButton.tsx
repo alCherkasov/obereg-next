@@ -10,7 +10,7 @@ interface CarouselButtonProps {
 const CarouselButton = ({ alt, direction = 'next' }: CarouselButtonProps) => {
 	const swiper = useSwiper()
 	const base =
-		'flex items-center justify-center w-[50px] h-[50px] rounded-xs bg-light  transition-primary cursor-pointer hover:bg-light-gray'
+		'opacity-70 flex items-center justify-center w-[50px] h-[50px] rounded-xs bg-light  transition-primary cursor-pointer hover:opacity-100 active:opacity-100'
 	const CarouselButtonClass = clsx(base, {
 		['rotate-180']: direction === 'prev',
 		['rotate-0']: direction === 'next',

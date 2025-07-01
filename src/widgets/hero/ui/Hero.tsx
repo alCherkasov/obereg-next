@@ -22,18 +22,18 @@ const Hero = () => {
 				<div className='group relative overflow-hidden flex h-full rounded-sm transition-primary'>
 					<Swiper modules={[Autoplay]} loop autoplay={true}>
 						<SwiperSlide>
-							<div className='bg-secondary-light w-full h-full p-sm'>
+							<div className='bg-secondary w-full h-full p-sm'>
 								<h2 className='text-xl font-semibold'>Какое-то предложение</h2>
 								<p>Место под баннер</p>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide>
-							<div className='bg-primary-light w-full h-full p-sm'>
+							<div className='bg-primary w-full h-full p-sm'>
 								<h2 className='text-xl font-semibold'>Какое-то предложение</h2>
 								<p>Место под баннер</p>
 							</div>
 						</SwiperSlide>
-						<div className='absolute z-50 top-1/2 px-sm w-full flex justify-between items-center opacity-100 transition-primary group-hover:opacity-100 md:opacity-0'>
+						<div className='absolute z-50 top-1/2 translate-y-[-50%] px-sm w-full flex justify-between items-center opacity-100 transition-primary group-hover:opacity-100 md:opacity-0'>
 							<CarouselButton alt='Предыдующий слайд' direction='prev' />
 							<CarouselButton alt='Следующий слайд' direction='next' />
 						</div>

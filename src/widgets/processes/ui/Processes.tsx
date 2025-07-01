@@ -5,7 +5,7 @@ import { ProcessCard } from './ProcessCard'
 const Processes = () => {
 	return (
 		<section id='processes' className='flex flex-col gap-md lg:flex-row'>
-			<div className='flex flex-col xl:min-w-[280px] xl:max-w-[380px]'>
+			<div className='flex flex-col gap-sm xl:min-w-[280px] xl:max-w-[380px]'>
 				<Heading level='2'>Как мы работаем?</Heading>
 				<p className='text-balance lg:text-lg'>
 					Ваш новый дом всего за 4&nbsp;шага — мы берём всё на себя

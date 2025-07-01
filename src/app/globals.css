@@ -9,6 +9,7 @@
 :root {
 	--color-dark: #1a1a1a;
 	--color-light: #fff;
+	--color-text: #373737;
 }
 
 @theme inline {
@@ -96,6 +97,6 @@
 
 body {
 	background: var(--color-light);
-	color: var(--color-dark);
+	color: var(--color-text);
 	font-family: var(--font-montserrat);
 }

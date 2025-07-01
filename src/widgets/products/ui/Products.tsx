@@ -1,6 +1,6 @@
 'use client'
 
-import { Heading } from '@/shared/ui'
+import { CarouselButton, Heading } from '@/shared/ui'
 import 'swiper/css'
 import { Autoplay } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -14,11 +14,14 @@ const Products = () => {
 			<div className=''>
 				<Swiper
 					modules={[Autoplay]}
-					slidesPerView={2}
+					slidesPerView={1}
 					spaceBetween={20}
 					loop={true}
 					// autoplay={true}
 					breakpoints={{
+						480: {
+							slidesPerView: 2,
+						},
 						768: {
 							slidesPerView: 3,
 						},
@@ -33,10 +36,15 @@ const Products = () => {
 								title={card.title}
 								imageUrl={card.imageUrl}
 								link={card.link}
-								badge={card.badge}
 							/>
 						</SwiperSlide>
 					))}
+					<div className='absolute z-50 left-0 top-1/2 translate-y-[-50%] pl-sm opacity-100 transition-primary'>
+						<CarouselButton alt='Предыдующий слайд' direction='prev' />
+					</div>
+					<div className='absolute z-50 right-0 top-1/2 translate-y-[-50%] pr-sm opacity-100 transition-primary'>
+						<CarouselButton alt='Следующий слайд' direction='next' />
+					</div>
 				</Swiper>
 			</div>
 		</section>

@@ -13,7 +13,7 @@ export const ProcessCard: FC<IProcess> = ({
 	cardColor,
 }) => {
 	const base =
-		'relative overflow-hidden xl:aspect-[4/3] xl:max-w-[380px] xl:max-h-[280px] flex flex-col gap-sm px-xs pt-xs pb-sm bg-${cardColor} rounded-sm'
+		'relative overflow-hidden xl:aspect-[4/3] xl:max-w-[380px] xl:max-h-[280px] flex flex-col gap-sm px-xs pt-xs pb-sm md:px-sm md:pt-sm md:pb-md bg-${cardColor} rounded-sm'
 
 	const cardClass = clsx(base, cardColor)
 	return (

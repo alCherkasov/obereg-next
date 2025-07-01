@@ -6,7 +6,7 @@ const Contacts = () => {
 	return (
 		<section id='contacts'>
 			<div className='flex flex-col gap-md sm:grid sm:grid-cols-2'>
-				<div>
+				<div className='flex flex-col gap-sm'>
 					<Heading level='2'>Свяжитесь с&nbsp;нами</Heading>
 					<p className='max-w-[380px] lg:text-lg'>
 						С нетерпением ждём вашего звонка или сообщения

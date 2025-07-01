@@ -18,7 +18,7 @@ const Nav = ({ links, isOpen, closeNav }: NavProps) => {
 				{links.map(link => (
 					<li
 						key={link.name}
-						className='w-full py-xxs transition-primary cursor-pointer hover:bg-dark-hover active:bg-dark-hover lg:hover:bg-light-gray lg:px-xxs lg:rounded'
+						className='flex items-center w-full py-xxs transition-primary cursor-pointer hover:bg-dark-hover active:bg-dark-hover lg:hover:bg-light-gray lg:px-xxs lg:rounded'
 					>
 						<Link
 							onClick={closeNav}
