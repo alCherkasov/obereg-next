@@ -25,7 +25,7 @@ const CarouselButton = ({ alt, direction = 'next' }: CarouselButtonProps) => {
 			}
 		>
 			<Image
-				src={'/icons/arrow.svg'}
+				src={'/icons/arrow-next.svg'}
 				alt={alt}
 				width={24}
 				height={24}
