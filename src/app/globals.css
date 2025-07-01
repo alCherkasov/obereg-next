@@ -16,6 +16,7 @@
 	--font-inter: var(--font-inter);
 	--font-montserrat: var(--font-montserrat);
 
+	--color-text: #373737;
 	--color-dark: var(--color-dark);
 	--color-dark-hover: #2e2e2e;
 	--color-light: var(--color-light);

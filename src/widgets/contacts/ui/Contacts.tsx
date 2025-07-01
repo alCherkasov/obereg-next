@@ -20,7 +20,7 @@ const Contacts = () => {
 								<span className='font-inter font-semibold'>Отдел продаж:</span>
 								<br />
 								<Link href={'tel:+79182031229'} className='underline'>
-									+7 (918) 20-12-29
+									+7 (918) 203-12-29
 								</Link>
 							</p>
 							<p className='text-sm lg:text-lg'>

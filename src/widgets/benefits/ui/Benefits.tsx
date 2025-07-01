@@ -6,7 +6,7 @@ const Benefits = () => {
 	return (
 		<section
 			id='benefits'
-			className='relative overflow-hidden w-full px-xs pt-sm pb-md md:px-sm md:pb-md lg:p-md lg:pb-lg rounded-sm bg-secondary-light'
+			className='relative overflow-hidden w-full px-xs pt-sm pb-md md:px-sm md:pb-md lg:p-md lg:min-h-[420px] rounded-sm bg-secondary-light'
 		>
 			<div className='flex flex-col justify-between gap-sm lg:gap-lg lg:flex-row'>
 				<div className=''>

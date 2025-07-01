@@ -1,8 +1,8 @@
-import { INavLink } from './types'
+import { INavLink } from '../model/types'
 
 export const navConfig: INavLink[] = [
 	{
-		name: 'Мы строим',
+		name: 'Наши решения',
 		path: '#products'
 	},
 	{

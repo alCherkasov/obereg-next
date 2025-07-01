@@ -10,7 +10,7 @@ import ProductCard from './ProductCard'
 const Products = () => {
 	return (
 		<section id='products' className='flex flex-col gap-md'>
-			<Heading level='2'>Мы строим</Heading>
+			<Heading level='2'>Наши решения</Heading>
 			<div className=''>
 				<Swiper
 					modules={[Autoplay]}

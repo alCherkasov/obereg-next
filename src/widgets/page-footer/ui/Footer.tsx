@@ -1,4 +1,5 @@
 import { Heading } from '@/shared/ui'
+import { navConfig } from '@/widgets/page-header/config/navConfig'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -11,46 +12,16 @@ const Footer = () => {
 						Навигация
 					</Heading>
 					<ul className='flex flex-col gap-xs text-xs text-light md:text-md'>
-						<li>
-							<Link
-								href={'#products'}
-								className='transition-primary hover:text-primary'
-							>
-								Мы строим
-							</Link>
-						</li>
-						<li>
-							<Link
-								href={'#benefits'}
-								className='transition-primary hover:text-primary'
-							>
-								Преимущества
-							</Link>
-						</li>
-						<li>
-							<Link
-								href={'#processes'}
-								className='transition-primary hover:text-primary'
-							>
-								Этапы работы
-							</Link>
-						</li>
-						<li>
-							<Link
-								href={'#photos'}
-								className='transition-primary hover:text-primary'
-							>
-								Фотографии
-							</Link>
-						</li>
-						<li>
-							<Link
-								href={'#contacts'}
-								className='transition-primary hover:text-primary'
-							>
-								Контакты
-							</Link>
-						</li>
+						{navConfig.map(link => (
+							<li key={link.name}>
+								<Link
+									href={link.path}
+									className='transition-primary hover:text-primary'
+								>
+									{link.name}
+								</Link>
+							</li>
+						))}
 					</ul>
 				</nav>
 				<div className='flex flex-col gap-xs'>

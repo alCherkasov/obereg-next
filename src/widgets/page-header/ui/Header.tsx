@@ -3,7 +3,7 @@
 import { Logo } from '@/shared/ui'
 import Link from 'next/link'
 import { useState } from 'react'
-import { navConfig } from '../model/navConfig'
+import { navConfig } from '../config/navConfig'
 import BurgerButton from './BurgerButton'
 import Nav from './Nav'
 
@@ -12,8 +12,8 @@ const Header = () => {
 	// useHeaderShadow('page-header')
 	return (
 		<header className='fixed z-[100] w-full mt-xs'>
-			<div className='max-w-7xl w-full mx-auto px-5 lg:px-[3.125rem]'>
-				<div className='relative px-sm py-xs'>
+			<div className='max-w-7xl w-full mx-auto px-sm lg:px-[3.125rem]'>
+				<div className='relative px-xs py-xs md:px-sm'>
 					{/* Слой с блюром фона */}
 					<div className='absolute inset-0 bg-[rgba(245,245,245,0.4)] backdrop-blur-[32px] rounded-xs -z-10' />
 
@@ -22,7 +22,10 @@ const Header = () => {
 						id='page-header'
 						className='relative flex justify-between items-center'
 					>
-						<Link href='/' className='relative w-[160px] h-[37px]'>
+						<Link
+							href='/'
+							className='relative w-[120px] h-[18px] md:w-[160px] md:h-[37px]'
+						>
 							<Logo />
 						</Link>
 						<Nav
