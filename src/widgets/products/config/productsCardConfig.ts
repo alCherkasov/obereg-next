@@ -3,22 +3,22 @@ import { IProductCard } from '../model/types'
 export const ProductCardConfig: IProductCard[] = [
 	{
 		id: 1,
-		title: 'Модульные дома',
+		title: 'Барнхаусы',
 		link: '/products',
-		imageUrl: '/img/products/modulniy-dom.webp',
+		imageUrl: '/img/products/barnhouse.webp',
 		badge: 'best-seller'
 	},
 	{
 		id: 2,
-		title: 'Каркасные дома',
+		title: 'А-фреймы',
 		link: '/products',
-		imageUrl: '/img/products/karkasniy-dom.webp'
+		imageUrl: '/img/gallery/img-gal14.webp'
 	},
 	{
 		id: 3,
 		title: 'Глэмпинг',
 		link: '/products',
-		imageUrl: '/img/products/glamping.webp'
+		imageUrl: '/img/gallery/img-gal13.webp'
 	},
 	{
 		id: 4,
@@ -26,10 +26,10 @@ export const ProductCardConfig: IProductCard[] = [
 		link: '/products',
 		imageUrl: '/img/products/banya.webp'
 	},
-	{
-		id:5,
-		title: 'Бани',
-		link: '/products',
-		imageUrl: '/img/products/banya.webp'
-	},
+	// {
+	// 	id:5,
+	// 	title: 'Бани',
+	// 	link: '/products',
+	// 	imageUrl: '/img/products/banya.webp'
+	// },
 ]
